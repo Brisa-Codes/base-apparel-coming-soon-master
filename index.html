@@ -6,22 +6,24 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link rel="stylesheet" href="./css/styles.css">
-</head>
+  
+  </head>
 <body>
   <div class="base__container">
     <div class="base__wrapper">
       <div class="base__apparel">
         <img src="/images/logo.svg" alt="logo">
-        <div class="base__apparel__details">
+        <div class="base-child base__apparel__details">
           <h3>we're</h3>
           <h1>coming <br> soon</h1>
           <p>Hello fellow shoppers! We're currently building our new fashion store. 
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
         <div class="base__email">
-          <input type="email" placeholder="Email Address" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
           <img class="submit-btn" src="./images/icon-arrow.svg" alt="submit-btn">
         </div>
+        <h6 id="popup">Please provide a valid email</h6>
       </div>
     </div>
 
@@ -29,9 +31,5 @@
       <img src="/images/hero-desktop.jpg" alt="desktop-image">
     </div>
   </div>
-
-  <script>
-
-  </script>
 </body>
 </html>
