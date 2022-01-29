@@ -67,16 +67,25 @@ body {
 }
 
 .base__apparel .base__email {
+    width: 360px;
     display: flex;
     position: relative;
 }
 
-.base__apparel .base__email:hover {
-    cursor: pointer;
-    opacity: 0.8;
+.base__apparel .base__email form {
+    display: flex;
+    width: 360px;
 }
 
-.base__apparel h6 {
+.base__email button {
+    position: absolute;
+   right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.base__apparel p {
     padding-top: 10px;
     padding-left: 20px;
     color: var(--soft-red);

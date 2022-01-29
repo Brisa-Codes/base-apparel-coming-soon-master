@@ -20,10 +20,11 @@
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
         <div class="base__email">
-          <input type="email" id="email" name="email" placeholder="Email Address" required>
-          <img class="submit-btn" src="./images/icon-arrow.svg" alt="submit-btn">
+          <form name="myForm">
+            <input type="email" id="email" name="email" placeholder="Email Address" required oninvalid="this.setCustomValidity('Please provide a valid email')" oninput="setCustomValidity('')">
+            <button id="submit-btn" type="submit"><img src="./images/icon-arrow.svg" alt="submit"></button>
+          </form>
         </div>
-        <h6 id="popup">Please provide a valid email</h6>
       </div>
     </div>
 
@@ -31,5 +32,6 @@
       <img src="/images/hero-desktop.jpg" alt="desktop-image">
     </div>
   </div>
+
 </body>
 </html>
