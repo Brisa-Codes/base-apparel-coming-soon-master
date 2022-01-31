@@ -211,6 +211,7 @@ input::placeholder {
         width: 200px;
         display: flex;
         padding-left: 53px;
+        margin-bottom: 10%;
         position: relative;
     }
 
@@ -220,6 +221,17 @@ input::placeholder {
         background: var(--desaturated-red);
         padding: 18px 32px;
         border-radius: 36px;
+    }
+
+    .base__feature__image img {
+        width: 100%;
+        margin-top: 60px;
+        height: 260px;
+    }
+
+    .base__apparel img {
+        position: absolute;
+        padding: 3%;
     }
     
 }
