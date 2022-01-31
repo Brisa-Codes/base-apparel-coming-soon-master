@@ -79,7 +79,7 @@ body {
 
 .base__email button {
     position: absolute;
-   right: 0;
+    right: 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -125,11 +125,6 @@ input::placeholder {
     font-size: 16px;
     padding-left: 10px;
     color: var(--desaturated-red);
-}
-
-h6 {
-
-    display: none;
 }
 
 @media (max-width: 480px) { 
@@ -198,12 +193,6 @@ h6 {
         line-height: 1.4;
     }
 
-    .base__email {
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
     .base__apparel .base__email input {
         display: flex;
         border: none;
@@ -215,16 +204,22 @@ h6 {
 
     .base__apparel .base__email form {
         display: flex;
-        width: 140px;
+        width: 120px;
     }
 
-    
-    .base__email button {
-        position: absolute;
+    .base__apparel .base__email {
+        width: 200px;
+        display: flex;
+        padding-left: 53px;
+        position: relative;
+    }
+
+    .base__apparel .base__email img {
         background: none;
-        border: none;
-        cursor: pointer;
+        border: 1px solid var(--desaturated-red);
+        background: var(--desaturated-red);
+        padding: 18px 32px;
+        border-radius: 36px;
     }
     
 }
-
