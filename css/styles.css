@@ -9,6 +9,8 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background: linear-gradient(135deg,#fff5f5, #fff);
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
 }
 
 :root {
@@ -18,13 +20,13 @@ body {
 
 }
 
-.base__container {
+.base__main {
     display: flex;
 }
 
 .base__wrapper {
-    padding-right: 15%;
-    padding-left: 10%;
+    padding: 0 6rem;
+    margin-right: 11.5em;
 }
 
 .base__apparel {
@@ -60,10 +62,11 @@ body {
 .base__apparel .base__apparel__details p {
     font-weight: 400;
     color: var(--desaturated-red);
-    font-size: 18px;
+    font-size: 16px;
     width: 460px;
     padding: 20px 0;
-    line-height: 1.5;
+    line-height: 2;
+    margin: 2rem 0;
 }
 
 .base__apparel .base__email {
@@ -128,9 +131,14 @@ input::placeholder {
 }
 
 @media (max-width: 480px) { 
-    .base__container {
+    
+    .base__main {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .base__apparel .base__apparel__details {
+        padding: 10px 0px;
     }
 
     .base__apparel img {
@@ -143,43 +151,29 @@ input::placeholder {
         padding: 0 10px;
     }
 
-    .base-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .base__feature__image img {
         width: 100%;
         height: 260px;
     }
 
-    .base__apparel .base__apparel__details {
-        padding-top: 40px;
-    }
-
-    .base__apparel {
-        padding: 2%;
-    }
 
     .base__apparel .base__apparel__details h3 {
         text-transform: uppercase;
         font-weight: 100;
         font-size: 40px;
-        text-align: center;
         letter-spacing: 5px;
         color: var(--desaturated-red);
-        padding-top: 20px;
+        padding-left: 52px;
     }
 
     .base__apparel .base__apparel__details h1 {
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
         font-weight: 400;
-        font-size: 50px;
         text-align: center;
+        font-size: 50px;
         color: var(--dark-grayish-red);
-        padding-top: 20px;
+        padding-left: 52px;
     }
 
     
@@ -189,7 +183,6 @@ input::placeholder {
         font-size: 16px;
         text-align: center;
         width: 340px;
-        padding: 20px;
         line-height: 1.4;
     }
 
@@ -204,15 +197,13 @@ input::placeholder {
 
     .base__apparel .base__email form {
         display: flex;
-        width: 120px;
+        width: 225px;
     }
 
     .base__apparel .base__email {
-        width: 200px;
-        display: flex;
+        width: 214px;
         padding-left: 53px;
         margin-bottom: 10%;
-        position: relative;
     }
 
     .base__apparel .base__email img {
@@ -223,15 +214,15 @@ input::placeholder {
         border-radius: 36px;
     }
 
-    .base__feature__image img {
-        background-image: url(/images/hero-mobile.jpg);
-        margin-top: 60px;
-        height: 360px;
-    }
-
     .base__apparel img {
         position: absolute;
         padding: 3%;
+    }
+
+    .base__feature__image img {
+        margin-top: 60px;
+        width: 100%;
+        height: 380px;
     }
     
 }
