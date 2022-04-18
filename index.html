@@ -20,9 +20,10 @@
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
         <div class="base__email">
-          <form name="myForm">
-            <input type="email" id="email" name="email" placeholder="Email Address" required oninvalid="this.setCustomValidity('Please provide a valid email')" oninput="setCustomValidity('')">
-            <button id="submit-btn" type="submit"><img src="./images/icon-arrow.svg" alt="submit"></button>
+          <form onsubmit="return validForm()">
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <span id="emailError"></span>
+            <button type="submit"><img src="./images/icon-arrow.svg"></button>
           </form>
         </div>
       </div>
@@ -33,5 +34,6 @@
     </div>
   </div>
 
+  <script src="./script.js"></script>
 </body>
 </html>
