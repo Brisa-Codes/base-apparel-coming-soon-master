@@ -130,6 +130,11 @@ input::placeholder {
     color: var(--desaturated-red);
 }
 
+#emailError {
+    position: absolute;
+    top: 64px;
+}
+
 @media (max-width: 480px) { 
     
     .base__main {
